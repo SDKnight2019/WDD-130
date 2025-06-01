@@ -73,7 +73,6 @@
 
 /* Activity 3 styles */
 .content3 {
-  /* This is the parent of the activity 3 boxes. */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 100px;
