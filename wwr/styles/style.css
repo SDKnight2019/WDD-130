@@ -52,7 +52,7 @@ nav a:hover {
     padding-top: 10px;
 }
 
-#hero-image {
+#hero-img {
     width: 100%;
 }
 
@@ -93,9 +93,14 @@ nav a:hover {
 footer {
     background-color: #335C67;
     padding: 25px 50px;
-    margin-top: 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
+    clear: both;
 }
+
 
 footer p {
     font-size: 1.2em;
@@ -131,16 +136,6 @@ footer .social img {
 main section img {
     box-sizing: border-box;
     max-width: 100%;
-}
-
-main section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer {
-    clear: both;
 }
 
 /* === START OF NEW LAYOUT CODE === */
@@ -225,13 +220,6 @@ nav {
     grid-column: 6/10;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
-}
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 200px;
 }
 
 .card-img {
