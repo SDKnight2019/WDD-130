@@ -1,0 +1,55 @@
+body{
+background-color: black;
+font-family: 'Times New Roman', Times, serif;
+}
+.card{
+    background-color: white;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+    max-width: 250px;
+    max-height: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-footer{
+
+}
+h3{
+    color: blue;
+    margin: 2px;
+    text-align: center;
+}
+h1{
+    color:black;
+    text-align: center;
+    margin-top: 5px;
+}
+p{
+    color: gray;
+    text-align: center;
+    margin: 20px;
+}
+.card img{
+    width: 100%;
+}
+.card-footer{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1px;
+
+}
+.card-footer-item{
+    background-color: blue;
+}
+.card-footer-item-subtitle{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+@media screen and (min-height: 20rem){
+    
+}
