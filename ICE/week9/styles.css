@@ -7,8 +7,7 @@ font-family: 'Times New Roman', Times, serif;
     align-content: center;
     margin: auto;
     text-align: center;
-    max-width: 250px;
-    max-height: 800px;
+    max-width: 15rem;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -16,7 +15,7 @@ font-family: 'Times New Roman', Times, serif;
 
 }
 h3{
-    color: blue;
+    color: #566eb0;
     margin: 2px;
     text-align: center;
 }
@@ -43,13 +42,22 @@ p{
 
 }
 .card-footer-item{
-    background-color: blue;
+    background-color: #566eb0;
+    padding: .5rem;
 }
 .card-footer-item-subtitle{
     color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 0.5rem;
 }
-@media screen and (min-height: 20rem){
-    
+.card-footer-item-title{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media screen and (min-height: 1000px){
+    html{
+        font-size: 32px;
+    }
 }
