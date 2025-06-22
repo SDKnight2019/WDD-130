@@ -92,13 +92,14 @@ nav a:hover {
 
 footer {
     background-color: #335C67;
-    padding: 25px 50px;
-    margin-top: 200px;
+    padding: 32px 20px 16px 20px;
+    margin-top: 70px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     clear: both;
+    justify-content: space-around;
 }
 
 
@@ -348,7 +349,7 @@ nav {
 
 .rivers-title {
     text-align: center;
-    margin: px 0 20px 0;
+    margin: 0 0 20px 0;
 }
 .rivers-title h1 {
     font-size: 2.5rem;
@@ -492,27 +493,17 @@ nav {
     font-size: 0.96em;
 }
 
-footer {
-    background-color: #335C67;
-    padding: 32px 20px 16px 20px;
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-footer .Social, footer .social {
+footer .social {
     margin-top: 8px;
 }
-footer .Social img, footer .social img {
+footer .social img {
     width: 32px;
     margin: 0 6px;
     vertical-align: middle;
     filter: grayscale(50%);
     transition: filter 0.2s;
 }
-footer .Social img:hover, footer .social img:hover {
+footer .social img:hover {
     filter: none;
 }
 
