@@ -1,7 +1,6 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Raleway&display=swap');
 
-/* General Styles */
 body {
     background-color: white;
     font-family: 'Raleway', Arial, sans-serif;
@@ -17,7 +16,9 @@ body {
 
 header {
     background-color: #335C67;
+    display: flex
 }
+
 
 nav a,
 #hero-msg h1,
@@ -155,6 +156,13 @@ nav {
     align-items: center;
 }
 
+.logo {
+    max-height: 115px;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
 #logo_link {
     justify-self: center;
     align-self: center;
@@ -192,7 +200,7 @@ nav {
     grid-template-rows: 60px 1fr 60px 300px 1fr 200px 1fr 60px 60px;
     gap: 40px;
     margin: 40px 0;
-    align-items: start; /* or center if you want vertical centering */
+    align-items: start; 
 }
 
 .rivers-card {
@@ -338,3 +346,195 @@ nav {
     }
 }
 
+
+.rivers-title {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+.rivers-title h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    padding: 12px 0;
+    border: 2px solid #E09F3E;
+    display: inline-block;
+    background: #f7fafc;
+    border-radius: 16px;
+    color: #335C67;
+    font-family: 'Rock Salt', cursive;
+}
+
+.rivers-featured {
+    width: 100%;
+    margin: 24px 0 32px 0;
+    text-align: center;
+}
+.rivers-featured img {
+    max-width: 100%;
+    max-height: 340px;
+    border-radius: 18px;
+    box-shadow: 0 4px 28px rgba(0,0,0,0.12);
+    object-fit: cover;
+}
+
+.rivers-facts {
+    margin: 20px 0 32px 0;
+    padding: 0 10vw;
+}
+.rivers-facts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.rivers-facts li {
+    font-size: 1.15rem;
+    padding: 8px 0;
+    color: #335C67;
+    font-weight: 600;
+}
+
+.rivers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin: 36px 0 40px 0;
+    padding: 0 2vw;
+}
+.river-card {
+    background: #f7fafc;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(30,80,70,0.07);
+    text-align: center;
+    padding: 18px 12px 20px 12px;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+.river-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 4px 32px rgba(44,62,80,0.14);
+}
+.river-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+.river-card h2 {
+    margin: 8px 0 8px 0;
+    font-size: 1.22rem;
+    color: #335C67;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+.river-card p {
+    color: #23415e;
+    font-size: 1rem;
+}
+
+.rivers-faq {
+    margin: 32px 0 40px 0;
+    padding: 0 8vw;
+}
+.rivers-faq h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #E09F3E;
+}
+.faq-item {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E09F3E;
+}
+.faq-item:last-child {
+    border-bottom: none;
+}
+.faq-item h3 {
+    font-size: 1.13rem;
+    margin-bottom: 7px;
+    color: #335C67;
+}
+.faq-item p {
+    color: #23415e;
+    line-height: 1.7;
+}
+
+.trips-info {
+    margin: 36px 0 0 0;
+    padding: 0 7vw;
+}
+.trips-info h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    color: #335C67;
+}
+.trip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+}
+.trip {
+    flex: 1 1 220px;
+    background: #f7fafc;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+    min-width: 250px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+}
+.trip h3 {
+    color: #335C67;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+.trip p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #23415e;
+}
+.trip em {
+    color: #888;
+    font-size: 0.96em;
+}
+
+/* Footer override for Rivers page */
+footer {
+    background-color: #335C67;
+    padding: 32px 20px 16px 20px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer .Social, footer .social {
+    margin-top: 8px;
+}
+footer .Social img, footer .social img {
+    width: 32px;
+    margin: 0 6px;
+    vertical-align: middle;
+    filter: grayscale(50%);
+    transition: filter 0.2s;
+}
+footer .Social img:hover, footer .social img:hover {
+    filter: none;
+}
+
+@media (max-width: 1100px) {
+    .rivers-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .rivers-facts {
+        padding: 0 3vw;
+    }
+    .rivers-faq, .trips-info {
+        padding: 0 2vw;
+    }
+    .trip-list {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
