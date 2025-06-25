@@ -483,6 +483,10 @@ body {
   text-align: center;
 }
 
+main.content {
+    margin: 25vh;
+}
+
 form {
   display: inline-block;
   padding: 1em;
