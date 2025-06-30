@@ -7,7 +7,8 @@ body {
 
 h1, h2, h3 {
     font-family: 'Times New Roman', Times, serif;
-    color: #77878B;
+    color: #305252;
+;
 }
 
 header {
@@ -16,7 +17,6 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 1.5rem 2rem 0.5rem 2rem;
     border-bottom: 2px solid #ffffff;
@@ -26,8 +26,10 @@ header {
 
 nav {
     display: flex;
-    gap: 1.5rem;
+    justify-content: space-evenly;
+    flex: 1;
     margin-top: 1rem;
+    gap: 0;
 }
 
 nav a {
@@ -36,21 +38,21 @@ nav a {
     font-size: 1.1rem;
     padding: 0.5rem 1.2rem;
     border: 2px solid #bbb;
-    border-radius: 8px;
+    border-radius: 1rem;
     background: #ffffff;
-    transition: background 0.2s, color 0.2s, border 0.2s;
 }
 
 nav a:hover, nav a:focus {
     background: #77878B;
-    color: #373E40;
+    color: #ffffff;
     border-color: #77878B;
 }
 
 nav a:first-child {
     border: 2.5px solid #77878B;
-    background: #ffffff;
+    background: #77878B;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .logo {
@@ -60,76 +62,37 @@ nav a:first-child {
     margin-bottom: 1rem;
 }
 
-
-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-bottom: 2rem;
-}
-
-h2 {
-    color: #373E40;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    margin-bottom: 0.2rem;
-    border-bottom: 3px solid #373E40;
-    width: fit-content;
-    padding-bottom: 0.2rem;
-}
-
-p {
-    font-size: 1.1rem;
-    color: #373E40;
-    line-height: 1.7;
-    margin-top: 0.5rem;
-}
-
-.mt-2 { margin-top: 2rem; }
-.mb-2 { margin-bottom: 2rem; }
-.text-center { text-align: center; }
-.flex-row { display: flex; flex-direction: row; }
-.flex-col { display: flex; flex-direction: column; }
-.gap-2 { gap: 2rem; }
-
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem 1rem 2rem;
-    background: #f8f8f8;
-    border-top: 2px solid #eee;
+    background: #373E40;
+    border-top: 2px solid #77878B;
     margin-top: 3rem;
     font-size: 1rem;
 }
 
 footer div, footer p {
     margin: 0;
+    color: #373E40;
+    padding: 0.5rem 1.2rem;
+    border: 2px solid #bbb;
+    border-radius: 1rem;
+    background-color: #ffffff;
+
 }
 
 footer a {
-    color: #305252;
+    color: #373E40;
     text-decoration: none;
     font-weight: bold;
     margin-right: 0.5rem;
 }
 
 footer a img {
-    width: 22px;
-    height: 22px;
+    width: 1.5rem;
+    height: 1.5rem;
     vertical-align: middle;
     margin-left: 0.3rem;
-}
-
-@media (max-width: 800px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-    .hero-image img {
-        width: 180px;
-        height: 220px;
-    }
 }
