@@ -1,24 +1,5 @@
 @import 'styles.css';
 
-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1.5rem 2rem 0.5rem 2rem;
-    border-bottom: 2px solid #ffffff;
-    background-color: #373E40;
-    gap: 0;
-}
-
-.logo {
-    margin-bottom: 0;
-    justify-content: flex-start;
-}
-
 .hero-image img {
     width: 220px;
     height: 280px;
