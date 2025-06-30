@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="wwr/styles/portfolio-styles.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="logo">
+        <img src="wwr/images/download (1).webp" alt="Logo">
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="resume.html">Resume</a>
+        <a href="contactme.html">Contact Me</a>
+      </nav>
+    </header>
+    <main>
+      <section class="project-row">
+        <div class="project-images-vertical">
+          <img src="wwr/images/Headless-server.png" alt="Headless Ubuntu Server" />
+          <img src="wwr/images/windows-VM.png" alt="Windows VM" />
+        </div>
+        <div class="explanation">
+          <h2>Home Lab</h2>
+          <p>
+            This is my home lab that I have set up to learn more about Cybersecurity.
+            I have set up a headless Ubuntu server that I can access remotely and work from anywhere,
+            and set up VMware on it to run virtual machines. I set up a Windows VM that I can use to learn more about Windows security,
+            by doing both blue team and red team exercises in and against it.
+            I have also installed and set up Kali Linux on my laptop so I can dual-boot,
+            allowing me to use the tools that are available on Kali Linux,
+            to perform penetration testing and other security tasks related to red team tasks.
+            On my Windows VM I will also be setting up ELK stack and Security Onion so I can read the logs,
+            and learn how to use them to detect attacks and other security issues in different computer systems.
+          </p>
+        </div>
+      </section>
+      <section class="project-row">
+        <div class="project-images-vertical">
+          <img src="wwr/images/week-12-110CSE.png" alt="CSE 110 Project" />
+        </div>
+        <div class="explanation">
+          <h2>CSE 110 Project</h2>
+          <p>
+            This is a project that I did in my CSE 110 class at BYU-Idaho.
+            It is a project where I had to pull in data from a CSV file, sort the data,
+            and then display the data for the year of interest.
+            The data was the max life and min life for the year of interest
+            and if the year was found in the data.
+            I chose to import the data from a CSV file, then sort using if statements for the data,
+            and then display the data for the year of interest. I am proud of this project
+            because it was the first time I had to import data from a CSV file and then
+            sort it to display it in a way that was easy to read and understand.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><a href="contactme.html">Contact Me</a></p>
+      <p>Spencer Knight Portfolio &copy; 2025 - Spencer Knight</p>
+      <div>
+        <a href="http://www.linkedin.com/in/spencer-d-k">
+          LinkedIn
+          <img src="wwr/images/LinkedIn_icon.svg.png" alt="LinkedIn Icon">
+        </a>
+      </div>
+    </footer>
+  </div>
+  <div id="img-modal" class="img-modal">
+    <span class="img-modal-close">&times;</span>
+    <img class="img-modal-content" id="img-modal-img" alt="">
+  </div>
+  <script>
+    document.querySelectorAll('.project-images-vertical img, .project-images img').forEach(img => {
+      img.addEventListener('click', function() {
+        const modal = document.getElementById('img-modal');
+        const modalImg = document.getElementById('img-modal-img');
+        modal.style.display = 'flex';
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+      });
+    });
+    document.querySelector('.img-modal-close').onclick = function() {
+      document.getElementById('img-modal').style.display = 'none';
+    };
+    document.getElementById('img-modal').onclick = function(e) {
+      if (e.target === this) this.style.display = 'none';
+    };
+  </script>
+</body>
+</html>
