@@ -48,13 +48,6 @@ main {
   color: #222;
 }
 
-p {
-  font-size: 1.1rem;
-  color: #373E40;
-  line-height: 1.7;
-  margin-top: 0.5rem;
-}
-
 .img-modal {
   display: none;
   position: fixed;
