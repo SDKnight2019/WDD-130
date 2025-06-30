@@ -52,6 +52,7 @@ p {
         gap: 1.2rem;
         padding: 0 0.5rem;
         align-items: stretch;
+        text-align: center;
     }
 
     .main-content {
