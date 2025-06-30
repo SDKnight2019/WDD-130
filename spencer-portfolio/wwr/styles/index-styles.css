@@ -4,22 +4,27 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding: 1.5rem 0 0.5rem 0;
-    border-bottom: 2px solid #eee;
-    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    border-bottom: 2px solid #ffffff;
+    background-color: #373E40;
+    gap: 0;
 }
 
 .logo {
     margin-bottom: 0;
+    justify-content: flex-start;
 }
 
 .hero-image img {
     width: 220px;
     height: 280px;
     object-fit: cover;
-    border: 2px solid orange;
-    border-radius: 10px;
+    border: 2px solid #77878B;
+    border-radius: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -39,4 +44,16 @@ main {
     border-radius: 75%;
     border: 2px solid #77878B;
     object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    margin-top: 1rem;
+    gap: 0;
 }

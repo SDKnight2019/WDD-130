@@ -12,32 +12,37 @@ h1, h2, h3 {
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 1.5rem 0 0.5rem 0;
-    border-bottom: 2px solid #77878B;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    border-bottom: 2px solid #ffffff;
     background-color: #373E40;
+    gap: 0;
 }
 
 nav {
     display: flex;
-    gap: 5rem;
+    gap: 1.5rem;
     margin-top: 1rem;
 }
 
 nav a {
     text-decoration: none;
-    color: #222;
+    color: #373E40;
     font-size: 1.1rem;
     padding: 0.5rem 1.2rem;
     border: 2px solid #bbb;
     border-radius: 8px;
-    background: #f8f8f8;
+    background: #ffffff;
     transition: background 0.2s, color 0.2s, border 0.2s;
 }
 
 nav a:hover, nav a:focus {
-    background: #373E40;
+    background: #77878B;
     color: #373E40;
     border-color: #77878B;
 }
@@ -65,23 +70,22 @@ section {
 }
 
 h2 {
-    color: orange;
+    color: #373E40;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
     margin-bottom: 0.2rem;
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #373E40;
     width: fit-content;
     padding-bottom: 0.2rem;
 }
 
 p {
     font-size: 1.1rem;
-    color: #222;
+    color: #373E40;
     line-height: 1.7;
     margin-top: 0.5rem;
 }
 
-/* Utility classes */
 .mt-2 { margin-top: 2rem; }
 .mb-2 { margin-bottom: 2rem; }
 .text-center { text-align: center; }
@@ -105,7 +109,7 @@ footer div, footer p {
 }
 
 footer a {
-    color: #0077b5;
+    color: #305252;
     text-decoration: none;
     font-weight: bold;
     margin-right: 0.5rem;
