@@ -1,7 +1,75 @@
 @import 'styles.css';
 
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px rgba(120, 135, 139, 0.08);
+}
 
+section {
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #305252;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #77878B;
+  padding-bottom: 0.3rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #305252;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 0.2rem;
+}
+
+.job, .edu {
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  margin: 0.2rem 0 0.1rem 0;
+  color: #305252;
+  font-size: 1.05rem;
+  font-weight: normal;
+}
+
+h4 {
+  margin: 0.1rem 0 0.5rem 0;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.skills {
+  list-style: disc inside;
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0 0;
+}
+
+.skills li {
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+}
 
 @media (max-width: 600px) {
-    
+  main {
+    padding: 1rem 0.2rem;
+    border-radius: 0.7rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+    padding-bottom: 0.2rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
 }
