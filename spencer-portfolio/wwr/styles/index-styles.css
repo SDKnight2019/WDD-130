@@ -1,8 +1,8 @@
 @import 'styles.css';
 
 .hero-image img {
-    width: 220px;
-    height: 280px;
+    width: 17.5rem;
+    height: 25rem;
     object-fit: cover;
     border: 2px solid #77878B;
     border-radius: 1rem;
@@ -17,14 +17,6 @@ main {
     gap: 2.5rem;
     align-items: flex-start;
     padding: 0 1rem;
-}
-
-.logo img {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 75%;
-    border: 2px solid #77878B;
-    object-fit: cover;
 }
 
 h1 {

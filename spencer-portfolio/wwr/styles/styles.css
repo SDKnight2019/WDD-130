@@ -11,6 +11,14 @@ h1, h2, h3 {
 ;
 }
 
+.logo img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 75%;
+    border: 2px solid #77878B;
+    object-fit: cover;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -48,7 +56,7 @@ nav a:hover, nav a:focus {
     border-color: #77878B;
 }
 
-nav a:first-child {
+nav a.active {
     border: 2.5px solid #77878B;
     background: #77878B;
     font-weight: bold;
@@ -95,4 +103,19 @@ footer a img {
     height: 1.5rem;
     vertical-align: middle;
     margin-left: 0.3rem;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main {
+    flex: 1 0 auto;
 }
